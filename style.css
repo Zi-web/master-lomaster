@@ -1943,6 +1943,8 @@ p {
 @media screen and (max-width: 1200px) {
   .consultation__wrapper::before {
     background-image: none;
+    display: none;
+    z-index: -5;
   }
   .consultation__wrapper {
     justify-content: space-between;
