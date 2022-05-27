@@ -149,7 +149,8 @@ p {
   box-sizing: border-box;
   /*display: inline-block;*/
   /*padding: 10px 20px;*/
-  color: inherit;
+  /*color: inherit;*/
+  color: #333333;
   text-decoration: none;
   height: inherit;
   overflow: hidden;
@@ -274,11 +275,23 @@ p {
   }
 
   #menu a {
-    color: #fff;
     display: block;
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 30px;
     text-decoration: none;
+  }
+
+  .menu__item--link {
+    color: #fff !important;
+  }
+
+  .inner_menu > li > a {
+    color: #333333;
+  }
+
+  .inner_menu {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -289,22 +302,15 @@ p {
   }
   .logo {
     order: 1;
-    /*margin: 0 auto 12px;*/
-    /*text-align: center;*/
     margin-left: 5px;
   }
   #burger-menu {
     order: 5;
     margin: 15px;
-    /*position: absolute;
-    top: 10px;
-    right: 10px;*/
   }
-
   .phone {
     order: 3;
     margin: 0 auto;
-    /*margin-bottom: 10px;*/
     text-align: center;
   }
 
@@ -314,6 +320,38 @@ p {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 680px) {
+  .header {
+    flex-direction: column;
+  }
+  .logo {
+    order: 1;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #burger-menu {
+    order: 5;
+    margin: 15px;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+  }
+  .phone {
+    order: 3;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .questions {
+    order: 4;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
 /*------------------*/
 
 .questions {
@@ -335,20 +373,20 @@ p {
 }
 
 .phone {
-  max-width: 185px;
+  max-width: 190px;
   width: 100%;
 }
 
 .phone p {
   font-size: 10px;
-  padding-left: 10px;
+  padding-left: 15px;
   position: relative;
 }
 
 .phone p:before {
   position: absolute;
   content: "";
-  left: 0;
+  left: 5px;
   top: 50%;
   transform: translateY(-50%);
   width: 6px;
@@ -1969,6 +2007,16 @@ p {
     line-height: 27px;
   }
 
+  .faq-item {
+    padding: 23px 14px 14px 23px;
+  }
+
+  .faq-item__text {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+  }
+
   .faq__subtitle {
     font-size: 14px;
     line-height: 17px;
@@ -2096,6 +2144,10 @@ p {
   color: #1d2025;
   font-size: 17px;
   text-decoration: none;
+}
+
+.consultation__contact--tel {
+  white-space: nowrap;
 }
 
 .consultation__form {
