@@ -12,21 +12,21 @@ for (let i = 0; i < tabNavs.length; i++) {
       if (activeTabAttr === contentAttr) {
         tabNavs[j].classList.add("active");
         tabPanes[j].classList.add("active");
-        if ($(window).width() < 640) {
+        /*if ($(window).width() < 640) {
+         
           $(".tab-pane.active:not(.slick-initialized)").slick();
-        }
+        
+        }*/
+        /*
         $(".tab-pane:not(.active)").hide(".slick-initialized");
-        $(".tab-pane.active").show(".slick-initialized");
-        /*$(".tab-pane:not(.active)").slick("unslick");*/
-        /*$(".tab-pane:not(.active)").remove(".slick-initialized");*/
+        $(".tab-pane.active").show(".slick-initialized");*/
       } else {
         tabNavs[j].classList.remove("active");
         tabPanes[j].classList.remove("active");
+        /*
         $(".tab-pane:not(.active)").hide(".slick-initialized");
         $(".tab-pane.active").show(".slick-initialized");
-        /*$(".tab-pane:not(.active)").slick("unslick");*/
-        /*$(".tab-pane.active.slick-initialized").slick("unslick");*/
-        /*$(".tab-pane.active:not(.slick-initialized)").slick();*/
+*/
       }
     }
   });

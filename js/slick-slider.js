@@ -1,4 +1,4 @@
-$(document).ready(function () {
+/*$(document).ready(function () {
   $(".slider").slick({
     arrows: true,
     dots: false,
@@ -22,3 +22,4 @@ $(document).ready(function () {
     ],
   });
 });
+*/
