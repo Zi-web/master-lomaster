@@ -716,7 +716,7 @@ p {
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 34px 30px;
   box-sizing: border-box;
   position: relative;
@@ -743,6 +743,7 @@ p {
   font-size: 30px;
   line-height: 37px;
   color: #1d2025;
+  padding-bottom: 15px;
 }
 
 .services__item--title span {
@@ -774,6 +775,7 @@ p {
   color: #1d2025;
   font-weight: 600;
   z-index: 2;
+  padding-bottom: 20px;
 }
 
 .services__item--descr {
@@ -803,6 +805,7 @@ p {
   color: #1d2025;
   /*padding: 5px;*/
   box-sizing: border-box;
+  margin-top: auto;
 }
 
 .button-show {
@@ -932,6 +935,21 @@ p {
   line-height: 20px;
   color: #1d2025;
   margin-bottom: 45px;
+}
+
+.button-show-examples {
+  display: block;
+  width: 290px;
+  height: 70px;
+  background: linear-gradient(180deg, #efb102 0%, #f5d011 100%);
+  border-radius: 10px;
+  margin: 0 auto;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 125%;
+  color: #1d2025;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1240,8 +1258,8 @@ p {
     /*padding-right: calc(50% - 960px);
     padding-left: calc(50% - 960px);*/
     /*max-width: 740px;*/
-    padding-left: 15px;
-    padding-right: 15px;
+    /*padding-left: 15px;
+    padding-right: 15px;*/
     width: 100%;
     margin: 0 auto 100px;
   }
@@ -2084,6 +2102,7 @@ p {
   width: 230px;
   height: 90px;
   transform: skew(-8deg);
+  border-radius: 3px;
 }
 
 .prorab__name {
