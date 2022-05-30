@@ -20,7 +20,7 @@ p {
   /*min-height: 100vh;*/
   display: flex;
   flex-direction: column;
-  padding-bottom: 60px;
+  padding-bottom: 160px;
 }
 
 .header {
@@ -684,7 +684,8 @@ p {
 .services {
   padding-right: calc(50% - 600px);
   padding-left: calc(50% - 600px);
-  padding-bottom: 80px;
+  padding-bottom: 160px;
+  margin-top: -40px;
 }
 
 .services__title {
@@ -1624,7 +1625,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto 130px;
+  margin: 0 auto 140px;
 }
 
 .wapp__title {
@@ -1754,7 +1755,7 @@ p {
 .step {
   padding-right: calc(50% - 600px);
   padding-left: calc(50% - 600px);
-  padding-bottom: 120px;
+  padding-bottom: 150px;
 }
 
 .step__title {
@@ -1899,7 +1900,7 @@ p {
   background-position-x: 100%;
   padding-right: calc(50% - 600px);
   padding-left: calc(50% - 600px);
-  padding-bottom: 120px;
+  padding-bottom: 150px;
 }
 
 .faq__title {
@@ -2060,7 +2061,7 @@ p {
 .consultation {
   padding-right: calc(50% - 600px);
   padding-left: calc(50% - 600px);
-  margin-bottom: 140px;
+  margin-bottom: 160px;
 }
 
 .consultation__wrapper {
@@ -2684,8 +2685,7 @@ p {
   }
 }
 
-.thumbCarousel .carousel__slide img,
-.thumbCarousel2 .carousel__slide img {
+.thumbCarousel .carousel__slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
