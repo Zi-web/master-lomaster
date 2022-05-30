@@ -14,6 +14,7 @@ let videoArr = [
 ];
 */
 
+
 window.onload = function () {
   const box = document.querySelector(".video__box");
   const link = document.querySelectorAll(".play");
